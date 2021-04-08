@@ -1,12 +1,16 @@
 <template>
   <div class="content">
+      <div id ="divImg">
+            <figure>
+              <img id="pikachu"  src=".././assets/pikachu.svg"/>
+            </figure>
+        </div>
     <div >
           <h1 class= "welcome">{{msg}}</h1>
     </div>
      <div class = "description" v-html="description"></div>
       <div>
           <router-link to="/search" tag="button" class="btn-red">Get started</router-link>
-          < RouterLink  : to = " www.google.com " > Google </ RouterLink >
 <router-view/>
       </div>
   </div>
@@ -30,34 +34,4 @@ export default {
     }
 }
 </script>
-<style scoped>
-.btn-red
-{
-  display: flex;
-  justify-content: center;
-  padding: 11px 20px;
-  background: #F22539;
-  border-radius: 60px;
-  color: #FFFFFF;
-  align-items: center;
-  margin: 0 auto;
-}
-.description
-{
-  font-family: Lato;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  color: #5E5E5E;
-}
-.welcome
-{
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  text-align: center;
-  color: #353535;
-}
-</style>
+<style src=".././css/styles.css"></style>

@@ -1,0 +1,268 @@
+figure {
+    display: flex;
+    justify-content: center;
+    width: 325px;
+    height: 288px;
+    position: relative;
+}
+
+figure::before {
+    content: "";
+    width: 206px;
+    height: 206px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: 67px;
+    right: 68px;
+    background: #F22539 !important;
+    border: 2px solid #000000;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E5E5E5;
+}
+
+#divImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pikachu {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.btn-red {
+    display: flex;
+    justify-content: center;
+    padding: 11px 20px;
+    background: #F22539;
+    border-radius: 60px;
+    color: #FFFFFF;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.description {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+.welcome {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    color: #353535;
+}
+
+.error_msg {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    align-items: center;
+    text-align: center;
+    color: #353535
+}
+
+.content {
+    align-items: center;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+}
+
+.content2 {
+    background-color: #E5E5E5;
+}
+
+.msg {
+    display: flex;
+    justify-content: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #5E5E5E;
+    align-items: center;
+}
+
+.input-search {
+    padding: 10%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    color: #353535;
+}
+
+.vs-input--icon {
+    position: absolute;
+    z-index: 100;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, .4);
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 8px;
+}
+
+.detail {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.detailName {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #353535;
+}
+
+.button_favorite {
+    display: flex;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    padding: 10px;
+    right: 10px;
+    margin: 0 0 0 auto;
+    border: none;
+    justify-content: end;
+}
+
+.img_start {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon_detail {
+    padding: 30px;
+}
+
+.searchs {
+    width: 100%;
+}
+
+.footer_button {
+    background: #FFFFFF;
+    padding: 18px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.buttonFooter {
+    display: flex;
+    padding: 11px 20px;
+    background: #F22539;
+    border-radius: 60px;
+    align-items: center;
+    margin: 0 auto;
+    width: 133px;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.color-icons {
+    display: flex;
+    color: #FFFFFF;
+    padding: 0%;
+}
+
+.group-button {
+    display: flex;
+}
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-container {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+}
+
+.modal-body {
+    margin: 20px 0;
+}
+
+.modal-default-button {
+    float: right;
+}
+
+
+/*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-leave-active {
+    opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
